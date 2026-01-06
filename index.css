@@ -37,12 +37,12 @@ header {
 
 .post-user-name {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 8px;
 }
 
 .post-location {
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin-top: 0;
 }
 
@@ -78,7 +78,7 @@ header {
 .post-likes,
 .post-user-id {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .post-likes,
