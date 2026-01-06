@@ -1,5 +1,87 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 5px solid rgb(225, 225, 225);
+    padding: 0 25px;
+    padding-bottom: 25px;
+}
+
+#user-avatar {
+    margin: auto 15px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.discription-header {
+    display: block;
+}
+
+.post-user-name {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.post-location {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+#feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-content {
+    border-radius: 8px;
+    max-width: 702px;
+    max-height: 936px;
+}
+
+.engagement-line {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 20px;
+}
+
+.engagement-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.engagement-icon:hover,
+.engagement-icon:focus {
+    opacity: 0.7;
+}
+
+.post-likes,
+.post-user-id {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.post-likes,
+.post-comment {
+  margin-left: 20px;
+}

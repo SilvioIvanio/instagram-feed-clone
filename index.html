@@ -1,9 +1,46 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <img src="images/logo.png">
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- Import Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+     <title>Oldagram</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="Oldagram logo">
+        <img class="profile-pic" id="user-avatar" src="images/user-avatar.jpg" alt="Profile picture">
+    </header>
+
+    <main id="feed">
+        <section class="post">
+            <div class="post-header">
+                <img class="profile-pic" id="post-avatar" src="images/avatar-vangogh.jpg" alt="Profile picture">
+               
+                <div class="descripion-header">
+                    <p class="post-user-name">Vincent van Gogh</p>
+                    <p class="post-location">Zudert, Netherlands</p>
+                </div>
+            </div>
+            
+            <img class="post-content" src="images/post-vangogh.jpg" alt="Post content">
+
+            <div class="engagement-line">
+                <img class="engagement-icon" src="images/icon-heart.png" alt="Like button">
+                <img class="engagement-icon" src="images/icon-comment.png" alt="Comment button">
+                <img class="engagement-icon" src="images/icon-dm.png" alt="Share button">
+            </div>
+
+            <p class="post-likes"><span class="likes-counter">21,492 </span>likes</p>
+
+            <p class="post-comment"><span class="post-user-id">vincey1853 </span>just took a few mushrooms lol</p>
+        </section>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
 </html>
