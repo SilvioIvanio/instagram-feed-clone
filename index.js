@@ -1,3 +1,4 @@
+// GETTERS
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -28,3 +29,33 @@ const posts = [
     }
 ]
 
+const feed = document.getElementById('feed')
+
+for (i = 0; i < posts.length; i++) {
+    const {name, username, location, avatar, post, comment, likes} = posts[i]
+
+    feed.innerHTML += `
+            <section class="post">
+            <div class="post-header">
+                <img class="profile-pic" id="post-avatar" src="${avatar}" alt="Profile picture">
+               
+                <div class="descripion-header">
+                    <p class="post-user-name">${name}</p>
+                    <p class="post-location">${location}</p>
+                </div>
+            </div>
+            
+            <img class="post-content" src="${post}" alt="Post content">
+
+            <div class="engagement-line">
+                <img class="engagement-icon" src="images/icon-heart.png" alt="Like button">
+                <img class="engagement-icon" src="images/icon-comment.png" alt="Comment button">
+                <img class="engagement-icon" src="images/icon-dm.png" alt="Share button">
+            </div>
+
+            <p class="post-likes"><span class="likes-counter">${likes} </span>likes</p>
+
+            <p class="post-comment"><span class="post-user-id">${username} </span>${comment}</p>
+        </section>
+    `
+}
