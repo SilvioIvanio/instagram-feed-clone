@@ -41,7 +41,7 @@ for (i = 0; i < posts.length; i++) {
             <div class="post-header">
                 <img class="profile-pic" id="post-avatar" src="${avatar}" alt="Profile picture">
                
-                <div class="descripion-header">
+                <div class="description-header">
                     <p class="post-user-name">${name}</p>
                     <p class="post-location">${location}</p>
                 </div>
